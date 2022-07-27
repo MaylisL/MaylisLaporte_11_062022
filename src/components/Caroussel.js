@@ -3,6 +3,7 @@ import Vectorprevious  from '../assets/Vectorprevious.svg'
 import Vectornext  from '../assets/Vectornext.svg'
 import './caroussel.css'
 import { useState } from 'react';
+import React from 'react';
 
 export default function Caroussel (props) {
 
@@ -36,8 +37,12 @@ export default function Caroussel (props) {
     return (
     <div className="caroussel">
         <img src={images[currentTabIndex]} alt='' className='carousselImg'></img>
-        <img src={Vectorprevious} alt='previous' className='previous' onClick={previous} role='button'></img>
-        <img src={Vectornext} alt='next' className='next' onClick={next} role='button'></img>
+        { numberofpictures() > 1 ? (
+            <React.Fragment>
+                <img src={Vectorprevious} alt='previous' className='previous' onClick={previous} role='button'></img>
+                <img src={Vectornext} alt='next' className='next' onClick={next} role='button'></img>
+            </React.Fragment>
+        ) : ""}
         <p className='numberofpictures'>{currentTabIndex + 1}/{numberofpictures()}</p>
     </div>
     )
