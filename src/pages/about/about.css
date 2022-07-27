@@ -1,0 +1,48 @@
+header {
+    margin: auto;
+    max-width: 1240px;
+  }
+  .about .banner {
+    margin-bottom: 0;
+  }
+
+.dropdownContainer {
+  max-width: 1023px;
+  margin: auto;
+}
+
+.dropdownContainer  .close {
+  height: 47px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.dropdownContainer .dropdownName , .dropdownContainer .content {
+  font-size: 24px;
+}
+
+.dropdownContainer .showContent {
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+
+@media screen and (max-width: 769px) {
+  .about .banner {
+      height: 223px;
+  }
+  .about .bannerImg {
+    object-position: 100%;
+  }
+  .dropdownContainer .dropdownName {
+    font-size: 13px;
+  }
+  .dropdownContainer .content {
+    font-size: 12px;
+  }
+  .about .close {
+    height: 30px;
+    line-height: 30px;
+    margin-top: 15px;
+  }
+}

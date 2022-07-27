@@ -1,0 +1,62 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 68px;
+    max-width: 1240px;
+    margin-inline: auto;
+    margin-bottom: 63px ;
+    margin-top: 40px;
+}
+
+.headerLogo {
+    height: 68px;
+    width: 210.32px;
+}
+
+nav{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 68px;
+    color: #FF6060;
+}
+.nav {
+    display: flex;
+    column-gap: 57px;
+}
+:any-link {
+    color: #FF6060;
+    text-decoration: none;
+}
+  
+  /* Pour les navigateurs WebKit */
+:-webkit-any-link {
+    color: #FF6060;
+    text-decoration: none;
+  }
+  
+.active {
+    text-decoration: "underline";
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        margin: 20px;
+    }   
+}
+
+@media screen and (max-width: 769px) {
+    .nav{
+        text-transform: uppercase;
+        font-size: 12px;
+        column-gap: 10px;
+    }
+    .headerLogo {
+        height: 47px;
+        width: 145px;
+    }
+    .header {
+        margin-bottom: 16px;
+    }
+}

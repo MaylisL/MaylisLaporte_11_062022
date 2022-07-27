@@ -1,0 +1,57 @@
+.notfoundInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #FF6060;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+.notfoundNumber {
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.notfoundMessage {
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+}
+.linkAccueil {
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration-line: underline;
+    text-align: center;
+    margin-top: 180px;
+}
+
+@media screen and (max-width: 769px) {
+    .notfoundNumber {
+        font-size: 144px;
+    }
+    .notfoundMessage {
+        font-size: 18px;
+    }
+    .linkAccueil {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 376px) {
+    .notfoundNumber {
+        font-size: 96px;
+    }
+    .linkAccueil {
+        font-size: 14px;
+        margin-top: 130px;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,122 @@
+h1 {
+    margin: 0;
+}
+
+.caroussel {
+    margin-bottom: 30px;
+}
+
+.apartment {
+    max-width: 1240px;
+    margin: auto;
+}
+
+.apartmentDropdown{
+    display: flex;
+    justify-content: space-between;
+}
+
+.apartment .dropdownBox {
+    width: 47%;
+}
+
+.apartmentInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.gauche {
+    gap:30px ;
+}
+
+.droite {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.profile {
+    display: flex;
+}
+
+.apartmentTitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    color: #FF6060;
+}
+
+.apartmentLocation {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF6060;
+}
+
+.profileContainer {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 64px;
+    height: 64px;
+}
+
+.profilePicture {
+    width: 100%;
+    height: 100%;
+}
+
+.profileName {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF6060;
+    width: 93px;
+    height: 52px;
+    text-align: right;
+    align-self: center;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 769px) {
+    .caroussel {
+        margin-bottom: 15px;
+    }
+    .apartmentInfo {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .apartmentTitle {
+        font-size: 18px;
+    }
+    .apartmentLocation {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .droite {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-block: 16px;
+    }
+    .apartmentDropdown {
+        flex-direction: column;
+    }
+    .apartment .dropdownBox {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .profileContainer {
+        width: 32px;
+        height: 32px;
+    }
+    .profileName {
+        font-size: 12px;
+        line-height: 32px;
+    }
+}

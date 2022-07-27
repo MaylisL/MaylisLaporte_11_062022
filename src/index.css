@@ -1,0 +1,19 @@
+body {
+  margin: auto;
+  max-width: 1440px;
+}
+
+header {
+  margin: auto;
+  max-width: 1240px;
+}
+
+main {
+  margin: auto;
+  max-width: 1240px;
+}
+@media screen and (max-width: 1024px) {
+  main {
+    padding-inline: 20px;
+  }
+}

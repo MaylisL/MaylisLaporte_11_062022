@@ -1,0 +1,58 @@
+.caroussel {
+    position: relative;
+    height: 415px;
+    max-width: 1240px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.carousselImg {
+    z-index: -1;
+    width: 100%;
+    object-fit: cover;
+    height: 100%; 
+}
+
+.next , .previous {
+   position: absolute;
+   right: 23px;
+   bottom: calc(50% - 40px);
+}
+.previous {
+    left: 23px;
+}
+
+.numberofpictures {
+    position: absolute;
+    bottom: 6%;
+    width: 100%;
+
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+    color: #ffffff;
+ }
+
+ @media screen and (max-width: 769px) {
+    .numberofpictures {
+        visibility: hidden;
+    }
+ }
+
+ @media screen and (max-width: 376px) {
+    .caroussel {
+    height: 255px;
+    max-width: 335px;
+    border-radius: 10px;
+    }
+
+    .next , .previous {
+        height: 19px;
+        width: 11px;
+        bottom: calc(50% - 19px);
+    }
+}
